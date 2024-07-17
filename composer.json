@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Raorsa\\Temporaryscriptfiles\\": "src"
+      "Raorsa\\TemporaryScriptFiles\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Raorsa\\Temporaryscriptfiles\\Tests\\": "tests"
+      "Raorsa\\TemporaryScriptFiles\\Tests\\": "tests"
     }
   },
   "scripts": {

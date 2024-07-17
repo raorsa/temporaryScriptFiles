@@ -1,13 +1,13 @@
 <?php
 
-namespace Raorsa\Temporaryscriptfiles;
+namespace Raorsa\TemporaryScriptFiles;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Raorsa\Temporaryscriptfiles\Temporaryscriptfiles
+ * @see \Raorsa\TemporaryScriptFiles\Temporaryscriptfiles
  */
-class TemporaryscriptfilesFacade extends Facade
+class TemporaryScriptFilesFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class TemporaryscriptfilesFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'temporaryscriptfiles';
+        return 'TemporaryScriptFiles';
     }
 }

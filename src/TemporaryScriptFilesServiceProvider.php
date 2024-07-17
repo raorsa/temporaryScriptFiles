@@ -1,10 +1,10 @@
 <?php
 
-namespace Raorsa\Temporaryscriptfiles;
+namespace Raorsa\TemporaryScriptFiles;
 
 use Illuminate\Support\ServiceProvider;
 
-class TemporaryscriptfilesServiceProvider extends ServiceProvider
+class TemporaryScriptFilesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
