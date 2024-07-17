@@ -1,8 +1,8 @@
 <?php
 
-namespace Raorsa\Temporaryscriptfiles;
+namespace Raorsa\TemporaryScriptFiles;
 
-class Temporaryscriptfiles
+class TemporaryScriptFiles
 {
     // Build your next great package.
 }
