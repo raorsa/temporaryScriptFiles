@@ -1,0 +1,53 @@
+{
+  "name": "raorsa/temporaryscriptfiles",
+  "description": "Creator of script files that are deleted after being served",
+  "keywords": [
+    "raorsa",
+    "temporaryscriptfiles"
+  ],
+  "homepage": "https://github.com/raorsa/temporaryscriptfiles",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Josevi Canet",
+      "email": "jvcanet@raorsa.es",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Raorsa\\Temporaryscriptfiles\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Raorsa\\Temporaryscriptfiles\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Raorsa\\Temporaryscriptfiles\\TemporaryscriptfilesServiceProvider"
+      ],
+      "aliases": {
+        "Temporaryscriptfiles": "Raorsa\\Temporaryscriptfiles\\TemporaryscriptfilesFacade"
+      }
+    }
+  }
+}
