@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": "^8.2",
-    "illuminate/support": "^8.0",
+    "illuminate/support": "*",
     "raorsa/rw-file-cache": "^1.3"
   },
   "require-dev": {
