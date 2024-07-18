@@ -44,10 +44,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Raorsa\\Temporaryscriptfiles\\TemporaryscriptfilesServiceProvider"
+        "Raorsa\\Temporaryscriptfiles\\TemporaryScriptFilesServiceProvider"
       ],
       "aliases": {
-        "Temporaryscriptfiles": "Raorsa\\Temporaryscriptfiles\\TemporaryscriptfilesFacade"
+        "Temporaryscriptfiles": "Raorsa\\Temporaryscriptfiles\\TemporaryScriptFilesFacade"
       }
     }
   }
