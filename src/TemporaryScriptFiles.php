@@ -13,10 +13,7 @@ class TemporaryScriptFiles
     public function __construct()
     {
         $this->cache = new RWFileCache();
-        $this->cache->changeConfig([
-            'cacheDirectory' => 'tmp/',
-            'gzipCompression' => false
-        ]);
+        $this->cache->changeConfig(config('temporary-script-files.cache'));
     }
 
     public function setScriptFile(string $content, bool $absolute = false): string
