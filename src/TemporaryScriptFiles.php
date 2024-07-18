@@ -14,13 +14,14 @@ class TemporaryScriptFiles
     {
         $this->cache = new RWFileCache();
         $this->cache->changeConfig([
-            'cacheDirectory' => '/tmp/' . Session::getId()
+            'cacheDirectory' => 'tmp/',
+            'gzipCompression' => false
         ]);
     }
 
     public function setScriptFile(string $content, bool $absolute = false): string
     {
-        $id = md5($content);
+        $id = md5(Session::getId() . md5($content));
         $this->cache->set($id, $content, config('temporary-script-files.max_time_life'));
         return routeAlias('temporary-script-files.getScriptFile', ['id' => $id], $absolute);
     }

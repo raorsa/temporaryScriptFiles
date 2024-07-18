@@ -15,7 +15,7 @@ class TemporaryScriptFilesServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('TemporaryScriptFiles.php'),
+                __DIR__ . '/../config/config.php' => config_path('temporary-script-files.php'),
             ], 'config');
         }
     }
@@ -26,7 +26,7 @@ class TemporaryScriptFilesServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'TemporaryScriptFiles');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'temporary-script-files');
 
         // Register the main class to use with the facade
         $this->app->singleton('TemporaryScriptFiles', function () {
